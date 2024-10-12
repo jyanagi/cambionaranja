@@ -364,7 +364,7 @@ resource "nsxt_policy_security_policy" "restNSX_DFW_Policy" {
   }
 
   rule {
-    display_name       = "NSX RS - Rule with External IP to External Resource (Incompatible ruleset with Illumio)"
+    display_name       = "NSX RS - Rule with External IP to External Resource"
     source_groups      = [nsxt_policy_group.ipl_ext_ip.path]
     destination_groups = ["4.3.5.2"]
     action             = "ALLOW"
